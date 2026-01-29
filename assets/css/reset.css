@@ -1,0 +1,54 @@
+/* assets/css/reset.css */
+
+/* 1) Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2) Remove default margin */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3) Sensible line height */
+body {
+  line-height: 1.5;
+}
+
+/* 4) Media elements behave */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 5) Form elements inherit typography */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 6) Make buttons clickable */
+button {
+  cursor: pointer;
+}
+
+/* 7) Prevent long words from breaking layouts */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  overflow-wrap: break-word;
+}

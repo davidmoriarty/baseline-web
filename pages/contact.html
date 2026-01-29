@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact — BaselineWeb</title>
+    <meta name="description" content="Accessible contact form with progressive enhancement validation." />
+
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/layout.css" />
+    <link rel="stylesheet" href="../assets/css/components.css" />
+  </head>
+
+  <body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <header>
+      <nav aria-label="Primary navigation">
+        <a href="../index.html">BaselineWeb</a>
+        <button type="button" aria-expanded="false" aria-controls="primary-nav" id="nav-toggle">Menu</button>
+        <ul id="primary-nav">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li><a href="./contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section>
+        <h1>Contact</h1>
+        <p class="muted">This form demonstrates accessible labeling, helpful errors, and progressive enhancement.</p>
+
+        <div class="card">
+          <div id="form-status" class="muted" role="status" aria-live="polite"></div>
+
+          <form id="contact-form" novalidate>
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required />
+              <p class="error" id="name-error"></p>
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required />
+              <p class="error" id="email-error"></p>
+            </div>
+
+            <div class="field">
+              <label for="topic">Topic</label>
+              <select id="topic" name="topic" required>
+                <option value="">Select a topic</option>
+                <option value="general">General</option>
+                <option value="accessibility">Accessibility</option>
+                <option value="frontend">Frontend</option>
+              </select>
+              <p class="error" id="topic-error"></p>
+            </div>
+
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" required minlength="10"></textarea>
+              <p class="error" id="message-error"></p>
+            </div>
+
+            <button class="button primary" type="submit">Send message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <p>&copy; <span id="year"></span> BaselineWeb</p>
+      </div>
+    </footer>
+
+    <script src="../assets/js/nav.js" defer></script>
+    <script src="../assets/js/year.js" defer></script>
+    <script src="../assets/js/form-validation.js" defer></script>
+  </body>
+</html>

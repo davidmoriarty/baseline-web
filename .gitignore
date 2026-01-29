@@ -1,0 +1,10 @@
+# OS / editor noise
+.DS_Store
+.idea/
+.vscode/
+
+# Optional local tooling
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

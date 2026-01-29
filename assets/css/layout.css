@@ -1,0 +1,89 @@
+/* assets/css/layout.css */
+
+body > header,
+body > main,
+body > footer {
+  padding: var(--space-6) var(--space-4);
+}
+
+main {
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+body > header {
+  border-bottom: 1px solid var(--color-border);
+}
+
+body > footer {
+  border-top: 1px solid var(--color-border);
+}
+
+.footer-inner {
+  max-width: 72rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+/* Nav layout */
+nav[aria-label="Primary navigation"] {
+  max-width: 72rem;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+nav[aria-label="Primary navigation"] > a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+#primary-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+#primary-nav a {
+  color: var(--color-text);
+  text-decoration: none;
+  padding: var(--space-2) var(--space-2);
+  border-radius: var(--radius);
+}
+
+#primary-nav a:hover {
+  background: #f3f4f6;
+}
+
+/* Mobile: collapse nav links by default */
+@media (max-width: 40rem) {
+  #primary-nav {
+    width: 100%;
+    flex-direction: column;
+    gap: var(--space-2);
+    margin-top: var(--space-3);
+    display: none; /* JS will toggle */
+  }
+
+  /* When JS opens it */
+  #primary-nav[data-open="true"] {
+    display: flex;
+  }
+}
+
+/* Desktop: hide toggle, always show nav */
+@media (min-width: 40.001rem) {
+  #nav-toggle {
+    display: none;
+  }
+}
