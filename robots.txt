@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://baseline-web.davidmoriarty.dev/sitemap.xml
+Sitemap: https://baseline-web.pages.dev/sitemap.xml
