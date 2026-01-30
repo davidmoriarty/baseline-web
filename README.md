@@ -19,6 +19,17 @@ This project exists to demonstrate core web fundamentals that apply across frame
 - Gallery (pages/gallery.html) — responsive images
 - Contact (pages/contact.html) — accessible form with validation
 
+## Screenshots
+
+Representative views highlighting semantic structure, responsive layout, and accessible UI patterns.
+
+![Baseline Web – Gallery](./docs/screenshots/gallery.png)
+![Baseline Web – Home](./docs/screenshots/home.png)
+![Baseline Web – Article](./docs/screenshots/article.png)
+![Baseline Web – Contact](./docs/screenshots/contact.png)
+
+All interactions shown are keyboard-accessible and progressively enhanced.
+
 ## JavaScript features
 
 - Mobile navigation toggle with keyboard support and ESC-to-close
