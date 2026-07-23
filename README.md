@@ -1,4 +1,4 @@
-# BaselineWeb - A Standards-First Microsite
+# Baseline Web - A Standards-First Microsite
 
 A no-build, standards-first website demonstrating semantic HTML, responsive CSS, and progressive enhancement with vanilla JavaScript.
 
