@@ -1,5 +1,6 @@
-// assets/js/nav.js
+// baseline-web/assets/js/main.js
 
+// assets/js/nav.js
 (function () {
   const toggle = document.getElementById("nav-toggle");
   const nav = document.getElementById("primary-nav");
@@ -37,4 +38,12 @@
     if (nav.contains(target) || toggle.contains(target)) return;
     setOpen(false);
   });
+})();
+
+
+// assets/js/year.js
+(function () {
+  const el = document.getElementById("year");
+  if (!el) return;
+  el.textContent = String(new Date().getFullYear());
 })();
