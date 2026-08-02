@@ -71,6 +71,7 @@ p {
   --color-muted: #6b7280;
   --color-accent: #2563eb;
   --color-border: #e5e7eb;
+  --color-placeholder: #9ca3af;
 
   --font-body: system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -87,6 +88,10 @@ p {
 
 /* Base document styles */
 body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
   font-family: var(--font-body);
   font-size: 1rem;
   color: var(--color-text);
@@ -184,8 +189,10 @@ body > footer {
 }
 
 main {
+  width: 100%;
   max-width: 72rem;
   margin: 0 auto;
+  flex: 1;
 }
 
 body > header {
@@ -372,6 +379,11 @@ textarea {
   padding: var(--space-2) var(--space-3);
 }
 
+input::placeholder, textarea::placeholder {
+  color: var(--color-placeholder);
+  opacity: 1; /* Ensures consistent rendering across browsers */
+}
+
 .error {
   min-height: 1.25em;
   margin: 0;
@@ -387,6 +399,10 @@ textarea[aria-invalid="true"] {
 textarea {
   resize: none;
 }
+
+select:invalid { color: var(--color-placeholder); }
+select:valid { color: var(--color-text); }
+option { color: var(--color-text); }
 
 /* Gallery */
 .gallery {
